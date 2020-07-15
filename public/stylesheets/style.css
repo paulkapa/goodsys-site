@@ -265,10 +265,15 @@ ul {
 .text-container {
   display: inline-table;
   position: relative;
+  line-height: normal;
   border: rgba(60, 140, 230, 0.5) solid 1px;
   background-color: rgba(0,0,0, 0.3);
   margin: auto;
   text-align: center;
+}
+
+.text-container:hover {
+  background-color: rgba(39, 174, 96,0.7);
 }
 
 .half-width {
@@ -328,6 +333,14 @@ hr {
 
 .copyright {
   text-align: justify;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
 }
 
 @media screen and (max-width: 1366px){
