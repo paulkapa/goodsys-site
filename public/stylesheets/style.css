@@ -1,8 +1,346 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* CSS Styles */
+
+/* Style the navigation bar */
+nav {
+  width: 300px;
+  /*overflow: visible;*/
+  position: absolute;
+  font-size: inherit;
+  font-family: inherit;
+  z-index: 2;
 }
+
+/* Navbar links */
+nav a {
+  /*float: center;*/
+  text-align: center;
+  padding: 0px 0px;
+  color: white;
+  text-decoration: none;
+  z-index: 2;
+}
+/*--> <--*/
+
+/* NAVIGATION content*/
+header {
+  width: 300px;
+  background-color: rgba(0,0,0, 0.7);
+  position: relative;
+  z-index: 2;
+}
+
+header ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+header li{
+  display: inline-block;
+  padding: 0px;
+  margin-right: 0px;
+  /*position: aboslute, center;*/
+  z-index: 2;
+}
+
+header li a{
+	display: block;
+	min-width: 300px;
+	height: 40px;
+	font-family: inherit;
+	color: white;
+	background: rgba(44, 62, 80,1);
+  line-height: 40px;
+  position: relative center;
+  text-decoration: none;
+  text-align: center;
+  z-index: 2;
+}
+
+header li a:hover{
+	background: rgba(39, 174, 96,1);
+	color: #fff;
+  padding-right: 3px;
+}
+
+header li:hover ul li a{
+  height: 40px;
+	line-height: 40px;
+	min-width: 300px;
+  transition: 1s;
+  position: relative center;
+}
+
+header li ul{
+  display: none;
+}
+
+header li ul li{
+  display: block;
+  position: relative center;
+  float: none;
+}
+
+header li ul li a{
+	width: auto;
+	min-width: 300px;
+  padding: 0 0px; 
+  position: relative center;
+  background-color: rgba(60, 140, 230, 1);
+}
+
+header ul li a:hover+.hide,.hide:hover{
+  display: block;
+  position: absolute;
+  float: center;
+  z-index: 3;
+}
+
+header input[type="checkbox"]{
+  display: none;
+}
+
+header input[type="checkbox"]:checked~#menu{
+  display: block;
+}
+
+
+
+/* Multiple uses */
+header .show-menu{
+	font-family: inherit;
+	text-decoration: none;
+	color: #fff;
+	background: transparent;
+	text-align: center;
+	padding: 10px 0px;
+	display: none;
+  line-height: 40px;
+  z-index: 2;
+}
+
+@media screen and (max-width: 2160px){
+
+	header ul{
+		position: static;
+    display: none;
+	}
+
+	header li{
+    margin-bottom: 0px;
+	}
+
+	header ul li, li a{
+    width: 100%;
+	}
+
+	header .show-menu{
+    display: block;
+	}
+}
+/*--> <--*/
+
+/* FOOTER content*/
+footer {
+  display: block;
+  margin: auto;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+footer ul{
+  list-style-type: none;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+
+footer li{
+  display: inline-table;
+  padding: 10px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+
+footer li a{
+	display: block;
+	height: 40px;
+	color: #fff;
+	background: rgba(44, 62, 80,0.7);
+  line-height: 40px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+}
+
+footer li a:hover{
+	background: rgba(39, 174, 96,0.7);
+	color: #fff;
+  padding-right: 3px;
+}
+
+footer li:hover ul li a{
+  height: 40px;
+	line-height: 40px;
+  transition: 1s;
+}
+
+footer li ul li{
+  display: block;
+  margin: auto;
+  float: none;
+}
+
+footer li ul li a{
+  background-color: rgba(60, 140, 230, 0.5);
+}
+/*--> <--*/
+
+/* Formatting */
+body, html {
+  width: 100%;
+  height: 100%;
+  position: center;
+  /* Set BACKGROUND Picture */
+  background-image: url("../images/BlueSkyBottomMountains.jpeg");
+  /* Add the blur effect */
+  /*filter: blur(8px);*/
+  /*-webkit-filter: blur(8px);*/
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Formatting */
+  margin: auto;
+  padding: 2px 2px;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: rgba(255, 255, 255);
+  /*font-weight: bold;*/
+}
+
+/* OTHER */
+* {
+  box-sizing: border-box ;
+}
+
+/* CONTENT container */
+.bg-text-full {
+  display: inline-table;
+  width: 100%;
+  height: fit-content;
+  margin: auto;
+  background-color: rgb(0, 0, 0, 0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.3); /* Black w/opacity/see-through */
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  /*font-weight: bold;*/
+  border: 1px solid black;
+  padding: 5px 5px;
+  border-spacing: 5px 10px;
+  /*top: 50%;*/
+  /*left: 50%;*/
+  /*transform: translate(-50%, -50%);*/
+  z-index: 2;
+}
+/*END OTHER*/
 
 a {
   color: #00B7FF;
+  text-decoration: none;
 }
+
+p {
+  padding: 10px 10px;
+}
+
+ul {
+  list-style-type: '-->  ';
+  list-style-position: inside;
+}
+
+.text-container {
+  display: inline-table;
+  position: relative;
+  border: rgba(60, 140, 230, 0.5) solid 1px;
+  background-color: rgba(0,0,0, 0.3);
+  margin: auto;
+  text-align: center;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.third-width {
+  width: 33.33%;
+}
+
+.toggle-text-container {
+  display: inline-table;
+  position: relative;
+  float: right;
+  font-family: inherit;
+	text-decoration: none;
+	color: #fff;
+  background: rgba(0,0,0, 0.3);
+  border: rgba(60, 140, 230, 0.5) solid 1px;
+	text-align: center;
+  padding: 10px 10px;
+  line-height: 40px;
+}
+
+#toggle-text-container-view-1, #toggle-text-container-view-2 {
+  display:none;
+}
+
+.img-container {
+  display: table;
+  margin: auto;
+  padding: 5px 5px;
+}
+
+.img-container img{
+  width: 200px;
+  height: 200px;
+}
+
+h1, h2 {
+  text-align: center;
+  padding: 10px 10px;
+}
+
+h3, h4 {
+  text-align: center;
+  padding: 10px 10px;
+}
+
+hr {
+  border: 2px solid rgba(60, 140, 230, 0.5);
+}
+
+.copyright {
+  text-align: justify;
+}
+
+@media screen and (max-width: 1366px){
+  .third-width {
+    width: 100%;
+  }
+
+  .half-width {
+    width: 100%;
+  }
+}
+/*--> <--*/
+
+/*EOF*/
