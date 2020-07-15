@@ -1,6 +1,19 @@
 extends layout.pug
 
+block contentTop
+	.text-container
+		h1= message
 block content
+	.text-container
+		h1= message
+	.text-container
+		h2= error.status
+	.text-container
+		pre #{error.stack}
+block contentTopRO
+	.text-container
+		h1= message
+block contentRO
 	.text-container
 		h1= message
 	.text-container
