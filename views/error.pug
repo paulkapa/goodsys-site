@@ -1,6 +1,9 @@
 extends layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  .text-container
+    h1= message
+  .text-container
+    h2= error.status
+  .text-container
+    pre #{error.stack}
