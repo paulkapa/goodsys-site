@@ -1,5 +1,5 @@
 exports.getIndex = (req, res, next) => {
-    res.render('index', { title: 'GoodSys', lang : '' });
+    res.render('index', { title: 'GoodSys', lang : 'RO' });
 }
 
 exports.getIndexEN = (req, res, next) => {

@@ -1,11 +1,7 @@
-exports.getMaintenance = (req, res, next) => {
-    res.render('Maintenance', { title: 'Maintenance', lang : '' });
-}
-
 exports.getMaintenanceEN = (req, res, next) => {
-    res.render('Maintenance', { title: 'Maintenance', lang : 'EN' });
+    res.render('maintenance', { title: 'Maintenance', lang : 'EN' });
 }
 
 exports.getMaintenanceRO = (req, res, next) => {
-    res.render('Maintenance', { title: 'Maintenance', lang : 'RO' });
+    res.render('maintenance', { title: 'Maintenance', lang : 'RO' });
 }

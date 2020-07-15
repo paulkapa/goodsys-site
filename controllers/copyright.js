@@ -1,11 +1,7 @@
-exports.getCopyright = (req, res, next) => {
-    res.render('Copyright', { title: 'Copyright', lang : '' });
-}
-
 exports.getCopyrightEN = (req, res, next) => {
-    res.render('Copyright', { title: 'Copyright', lang : 'EN' });
+    res.render('copyright', { title: 'Copyright', lang : 'EN' });
 }
 
 exports.getCopyrightRO = (req, res, next) => {
-    res.render('Copyright', { title: 'Copyright', lang : 'RO' });
+    res.render('copyright', { title: 'Copyright', lang : 'RO' });
 }

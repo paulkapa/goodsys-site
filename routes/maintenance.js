@@ -1,8 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var maintenanceController = require('../controllers/maintenance.js');
-/* GET home page. */
-router.get('/maintenance', maintenanceController.getMaintenance);
+/* GET maintenance page. */
 router.get('/en/maintenance', maintenanceController.getMaintenanceEN);
 router.get('/ro/maintenance', maintenanceController.getMaintenanceRO);
 
