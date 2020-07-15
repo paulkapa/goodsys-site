@@ -1,32 +1,32 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    script(src='/javascripts/script.js')
-  body
-    .bg-text-full
-      if lang == 'EN'
-        include header.pug
-      else if lang == 'RO'
-        include headerRo.pug
-      else
-        include headerRO.pug
-    .bg-text-full
-      if lang == 'EN'
-        block contentTop
-        block content
-      else if lang == 'RO'
-        block contentTopRO
-        block contentRO
-      else
-        block contentTopRO
-        block contentRO
-    .bg-text-full
-      hr
-      if lang == 'EN'
-        include footer.pug
-      else if lang == 'RO'
-        include footerRO.pug
-      else
-        include footerRO.pug
+	head
+		title= title
+		link(rel='stylesheet', type="text/css", href='/stylesheets/style.css')
+		script(type="text/javascript", src='/javascripts/script.js')
+	body
+		.bg-text-full
+			if lang == 'EN'
+				include header.pug
+			else if lang == 'RO'
+				include headerRo.pug
+			else
+				include headerRO.pug
+		.bg-text-full
+			if lang == 'EN'
+				block contentTop
+				block content
+			else if lang == 'RO'
+				block contentTopRO
+				block contentRO
+			else
+				block contentTopRO
+				block contentRO
+		.bg-text-full
+			hr
+			if lang == 'EN'
+				include footer.pug
+			else if lang == 'RO'
+				include footerRO.pug
+			else
+				include footerRO.pug

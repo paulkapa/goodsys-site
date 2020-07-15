@@ -5,13 +5,8 @@ var maintenanceRouter = require('../routes/maintenance');
 
 module.exports = (app) => {
     app.use('/', indexRouter);
-    app.use('/en', indexRouter);
-    app.use('/ro', indexRouter);
-    app.use('/en/contact', contactRouter);
-    app.use('/ro/contact', contactRouter);
-    app.use('/en/copyright', copyrightRouter);
-    app.use('/ro/copyright', copyrightRouter);
-    app.use('/en/maintenance', maintenanceRouter);
-    app.use('/ro/maintenance', maintenanceRouter);
+    app.use('/', contactRouter);
+    app.use('/', copyrightRouter);
+    app.use('/', maintenanceRouter);
     // !-- Do not remove this line --! //
 };
