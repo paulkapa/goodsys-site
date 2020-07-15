@@ -2,8 +2,8 @@ var express = require('express');
 var router = express.Router();
 var contactController = require('../controllers/contact.js');
 /* GET home page. */
-router.get('/', contactController.getContact);
-router.get('/en', contactController.getContactEN);
-router.get('/ro', contactController.getContactRO);
+router.get('/contact', contactController.getContact);
+router.get('/en/contact', contactController.getContactEN);
+router.get('/ro/contact', contactController.getContactRO);
 
 module.exports = router;
