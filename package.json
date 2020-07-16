@@ -1,6 +1,6 @@
 {
-  "name": "goodsys-site",
-  "version": "0.0.0",
+  "name": "goodsys",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
