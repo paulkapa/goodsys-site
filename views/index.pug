@@ -1,12 +1,12 @@
 extends layout.pug
 
 block contentTop
-	.text-container
+	.text-container-title
 		h1 SC GoodSys SRL
 block content
 	h2 Welcome to #{title}
 	hr
-	label(for="toggle-text-container-view-1" class="toggle-text-container" style="backfround-color: rgba(39, 174, 96,0.7)") About Us
+	label(for="toggle-text-container-view-1" class="toggle-text-container" style="background-color: rgba(39, 174, 96,0.7)") About Us
 	input(type="checkbox", id="toggle-text-container-view-1", role="button", onclick="myFunction()")
 	label(for="toggle-text-container-view-2" class="toggle-text-container") Offered Services
 	input(type="checkbox", id="toggle-text-container-view-2", role="button", onclick="myFunction()")
@@ -80,7 +80,7 @@ block content
 				| of computer equipment, operating systems and software applications.
 				br
 block contentTopRO
-	.text-container
+	.text-container-title
 		h1 SC GoodSys SRL
 block contentRO
 	h2 Bine ați venit la #{title}
