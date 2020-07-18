@@ -1,0 +1,30 @@
+extends layout
+
+block contentTop
+	.text-container-title
+		h1 Subscriptions
+block content
+	if type == "advantage"
+		h2 Not Found
+	else if type == "flexible"
+		h2 Not Found
+	else if type == "unlimited"
+		h2 Not Found
+	else if type == "premium"
+		include it-premium.pug
+	else
+		h2 Content
+block contentTopRO
+	.text-container-title
+		h1 Abonamente
+block contentRO
+	if type == "advantage"
+		h2 Not Found
+	else if type == "flexible"
+		h2 Not Found
+	else if type == "unlimited"
+		h2 Not Found
+	else if type == "premium"
+		include it-premiumRO.pug
+	else
+		h2 Continut
