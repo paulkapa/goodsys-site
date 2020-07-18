@@ -1,7 +1,7 @@
 block bodyHeaderRO
 	header
-		label(for="show-menu" class="show-menu") MENIU SITE
-		input(type="checkbox" id="show-menu" role="button")
+		label(for="show-menu" class="show-menu float-left-always") MENIU SITE
+		input(type="checkbox" id="show-menu" class="float-left-always" role="button")
 		ul#menu
 			nav
 				li
@@ -34,8 +34,7 @@ block bodyHeaderRO
 					a(href="/ro/contact") Contact
 				li
 					a(href="/ro/copyright") Copyright
-	.text-container.float-right-always
-		a LIMBA
+		a.language-select LIMBA
 		ul.hide
 			li
 				a(href="/en/") EN

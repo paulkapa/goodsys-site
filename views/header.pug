@@ -1,7 +1,7 @@
 block bodyHeader
 	header
-		label(for="show-menu" class="show-menu") SITE MENU
-		input(type="checkbox" id="show-menu" role="button")
+		label(for="show-menu" class="show-menu float-left-always") SITE MENU
+		input(type="checkbox" id="show-menu" class="float-left-always" role="button")
 		ul#menu
 			nav
 				li
@@ -34,10 +34,9 @@ block bodyHeader
 					a(href="/en/contact") Contact
 				li
 					a(href="/en/copyright") Copyrigh
-	.text-container.float-right-always
-		a LANGUAGE
-		ul.hide
-			li
-				a(href="/en/") EN
-			li
-				a(href="/ro/") RO
+	a.language-select LANGUAGE
+	ul.hide
+		li
+			a(href="/en/") EN
+		li
+			a(href="/ro/") RO
