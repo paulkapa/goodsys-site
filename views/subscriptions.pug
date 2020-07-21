@@ -3,28 +3,48 @@ extends layout
 block contentTop
 	.text-container-title
 		h1 Subscriptions
+		if subscription == "advantage"
+			h2 Not Found
+		else if subscription == "flexible"
+			h2 Not Found
+		else if subscription == "unlimited"
+			h2 Not Found
+		else if subscription == "premium"
+			h2 IT Premium
+		else
+			h2 Details
 block content
-	if type == "advantage"
+	if subscription == "advantage"
 		h2 Not Found
-	else if type == "flexible"
+	else if subscription == "flexible"
 		h2 Not Found
-	else if type == "unlimited"
+	else if subscription == "unlimited"
 		h2 Not Found
-	else if type == "premium"
+	else if subscription == "premium"
 		include it-premium.pug
 	else
 		h2 Content
 block contentTopRO
 	.text-container-title
 		h1 Abonamente
+		if subscription == "advantage"
+			h2 Not Found
+		else if subscription == "flexible"
+			h2 Not Found
+		else if subscription == "unlimited"
+			h2 Not Found
+		else if subscription == "premium"
+			h2 IT Premium
+		else
+			h2 Detalii
 block contentRO
-	if type == "advantage"
+	if subscription == "advantage"
 		h2 Not Found
-	else if type == "flexible"
+	else if subscription == "flexible"
 		h2 Not Found
-	else if type == "unlimited"
+	else if subscription == "unlimited"
 		h2 Not Found
-	else if type == "premium"
+	else if subscription == "premium"
 		include it-premiumRO.pug
 	else
 		h2 Continut
