@@ -1,42 +1,25 @@
 block bodyHeader
 	header
-		label(for="show-menu" class="show-menu float-left-always") SITE MENU
-		input(type="checkbox" id="show-menu" class="float-left-always" role="button")
-		ul#menu
-			nav
-				li
-					a(href="/en/") Home
-				li
-					a Maintenance
-					ul.hide
-						li
-							a(href="/en/maintenance/service") Service
-						li
-							a(href="/en/maintenance/data-backup-recovery") Data Backup/Recovery
-						li
-							a(href="/en/maintenance/subsriptions") Subscription
-				li
-					a Subscriptions
-					ul.hide
-						li
-							a(href="/en/subscriptions/it-advantage") IT Advantage
-						li
-							a(href="/en/subscriptions/it-flex") IT Flex
-						li
-							a(href="/en/subscriptions/it-unlimited") IT Unlimited
-						li
-							a(href="/en/subscriptions/it-premium") IT Premium
-				li
-					a(href="/en/projects") Projects
-				li
-					a(href="/en/outsourcing") Outsourcing
-				li
-					a(href="/en/contact") Contact
-				li
-					a(href="/en/copyright") Copyrigh
-	a.language-select LANGUAGE
-	ul.hide
-		li
+		label(for="show-menu" class="show-menu") SITE MENU
+		input(id="show-menu" type="checkbox" role="button")
+		nav
+			a(href="/en/") Home
+			a(href="/en/maintenance") Maintenance
+			.hide
+				a(href="/en/maintenance/service") Service
+				a(href="/en/maintenance/data-backup-recovery") Data Backup/Recovery
+				a(href="/en/subscriptions") Subscription
+			a(href="/en/subscriptions") Subscriptions
+			.hide
+				a(href="/en/subscriptions/it-advantage") IT Advantage
+				a(href="/en/subscriptions/it-flex") IT Flex
+				a(href="/en/subscriptions/it-unlimited") IT Unlimited
+				a(href="/en/subscriptions/it-premium") IT Premium
+			a(href="/en/projects") Projects
+			a(href="/en/outsourcing") Outsourcing
+			a(href="/en/contact") Contact
+		label(for="language-select" class="language-select") LANGUAGE
+		input(type="checkbox" id="language-select" role="button")
+		.hide
 			a(href="/en/") EN
-		li
 			a(href="/ro/") RO
