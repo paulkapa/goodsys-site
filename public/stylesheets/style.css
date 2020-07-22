@@ -7,7 +7,7 @@ header {
   margin: auto;
 
   width: 100%;
-  height: 150px;
+  height: 100px;
 
   font-family: inherit;
   font-size: inherit;
@@ -51,7 +51,7 @@ nav a, nav .hide a {
 
   color: white;
 
-  padding: 5px 5px;
+  padding: 10px 10px;
   cursor: pointer;
 
   background-color: rgb(0,0,0);
@@ -89,6 +89,9 @@ nav a:hover+.hide, nav a+.hide:hover {
 .language-select {
   display: inline-table;
   margin: auto;
+
+  padding-top: 10px;
+  padding-right: 10px;
 
   position: relative;
   float: right;
@@ -140,6 +143,10 @@ header input#language-select[type="checkbox"]:checked+.hide {
     display: none;
   }
 
+  header {
+    height: 150px;
+  }
+
   header input#show-menu[type="checkbox"]:checked~nav {
     display: block;
     margin: auto;
@@ -151,6 +158,7 @@ header input#language-select[type="checkbox"]:checked+.hide {
     display: inline-table;
     margin: auto;
 
+    padding-top: 10px;
     padding-left: 50px;
 
     position: relative;
@@ -222,11 +230,11 @@ footer li a:hover {
 /* -->Page-Wide Parent Styles */
 body, html {
   display: inline-table;
-  background-image: url("../images/title-bg.jpg");
+  /*background-image: url("../images/title-bg.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
   margin: auto;
 
   width: 100%;
@@ -235,7 +243,9 @@ body, html {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: rgba(255, 255, 255);
 
-  padding: 50px 20px;
+  /*padding: 50px 20px;*/
+
+  background-color: rgba(0,0,0, 0.5);
 
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -249,8 +259,8 @@ body, html {
 /* Content Container */
 .bg-text-full {
   display: inline-table;
-  border: 3px solid black;
-  border-spacing: 2px 10px;
+  /*border: 3px solid black;*/
+  /*border-spacing: 2px 10px;*/
   margin: auto;
 
   width: 100%;
@@ -332,6 +342,11 @@ body, html {
   position: relative;
 }
 
+.img-container-logo {
+  background-color: rgba(255,255,255, 0.1);
+  backdrop-filter: blur(20px);
+}
+
 .img-container-100px-100px img {
   width: 100px;
   height: 100px;
@@ -370,7 +385,7 @@ body, html {
   position: relative;
   top: 50%;
   width: auto;
-  padding: 16px;
+  padding: 5px;
   margin-top: -22px;
   color: white;
   font-weight: bold;
