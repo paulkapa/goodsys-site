@@ -7,94 +7,130 @@ block contentTop
 		h2 IT Services Provider for Deveolping Communities
 block content
 	hr
-	.text-container(style="text-align: center").full-width.slideshow-container
-			.mySlides1(style="display: block")
-				.numbertext 1 / 3
-				img(src="/images/ComputerHardwareCloseUp.jpeg" style="width:100%")
-				.text Computer Hardware
-			.mySlides1(style="display: none")
-				.numbertext 2 / 3
-				img(src="/images/Circuit-Traces.jpg" style="width:100%")
-				.text Circuit Traces
-			.mySlides1(style="display: none")
-				.numbertext 3 / 3
-				img(src="/images/EarthOverviewNight.jpeg" style="width:100%")
-				.text The Earth At Night
-			br
-			a(class="prev" onclick="plusSlides(-1, 0)") &#10094;
-			a(class="next" onclick="plusSlides(1, 0)") &#10095;
+	.text-container(style="text-align: center").slideshow-container
+		.mySlides1(style="display: block")
+			.numbertext 1 / 3
+			img(src="/images/ComputerHardwareCloseUp.jpeg" style="width:100%")
+			.text Computer Hardware
+		.mySlides1(style="display: none")
+			.numbertext 2 / 3
+			img(src="/images/Circuit-Traces.jpg" style="width:100%")
+			.text Circuit Traces
+		.mySlides1(style="display: none")
+			.numbertext 3 / 3
+			img(src="/images/EarthOverviewNight.jpeg" style="width:100%")
+			.text The Earth At Night
+		br
+		a(class="prev" onclick="plusSlides(-1, 0)") &#10094;
+		a(class="next" onclick="plusSlides(1, 0)") &#10095;
 	hr
 	label(for="toggle-text-container-view-1" class="toggle-text-container" style="background-color: rgba(39, 174, 96,0.7)") About Us
 	input(type="checkbox" id="toggle-text-container-view-1" role="button" onclick="myFunction()")
 	label(for="toggle-text-container-view-2" class="toggle-text-container") Offered Services
 	input(type="checkbox" id="toggle-text-container-view-2" role="button" onclick="myFunction()")
 	.text-container-hidden-1(style="display:inline-table")
-		.text-container.full-width
-			h3 IT Maintenance, Computer Service
-			p
-				|Our company offers a full range of IT services, addressing both small and medium-sized companies
-				| as well as individuals. We are a team that has over 3 years of experience in terms of maintenance
-				| of computing equipment, performing computer service (both hardware and software), network
-				| implementation (both wired and wireless – design, wiring, installation, configuration, administration),
-				| offering technical assistance and maintenance services as well as consulting services.
-				br
-				br
-				a(href="/en/maintenance") Find out more...
-				br
-		.text-container.full-width
-			h3 Service Offer for Companies/Legal Persons
-			p
-				|Depending on the needs of each company, we can offer flexible maintenance subscriptions
-				| for computing equipment, but we can also act in the form of intervention (in the case
-				| of companies with which we do not have a contract with). Subscriptions offered include a
-				| fixed number of interventions (both software and hardware), maintenance and implementation
-				| (on request) of computer networks, consulting regarding the purchase and configuration
-				| of IT equipment and services used (internet, intranet, mail, file sharing).
-				br
-				br
-				a(href="/en/subscriptions") Find out more...
-				br
-		.text-container.full-width
-			h3 Advantages
-			p
-				|Contracting a company to perform hardware/software maintenance or implementation
-				| services brings a number of advantages in the face of hiring staff in your company:
-			ul
-				li
-					|The services will be provided by qualified and experienced
-					| personnel, no longer needing technical training of the internal staff
-				li
-					|The cost of contracting a maintenance company is much lower
-					| than in the case of hiring a specific person
-				li
-					|You can deduct a part of company taxes
+		.text-container
+			h1 Involvement and Commitment
+			br
+			.text-container
+				h3 IT Maintenance, Computer Service
+				p
+					|Our company offers a full range of IT services, addressing both small and medium-sized companies
+					| as well as individuals. We are a team that has over 3 years of experience in terms of maintenance
+					| of computing equipment, performing computer service (both hardware and software), network
+					| implementation (both wired and wireless – design, wiring, installation, configuration, administration),
+					| offering technical assistance and maintenance services as well as consulting services.
+					br
+					br
+					a(href="/en/maintenance", title="Maintenance Services") Find out more...
+					br
+			.text-container
+				h3 Service Offer for Companies/Legal Persons
+				p
+					|Depending on the needs of each company, we can offer flexible maintenance subscriptions
+					| for computing equipment, but we can also act in the form of intervention (in the case
+					| of companies with which we do not have a contract with). Subscriptions offered include a
+					| fixed number of interventions (both software and hardware), maintenance and implementation
+					| (on request) of computer networks, consulting regarding the purchase and configuration
+					| of IT equipment and services used (internet, intranet, mail, file sharing).
+					br
+					br
+					a(href="/en/subscriptions", title="Subscriptions") Find out more...
+					br
+			.text-container
+				h3 Advantages
+				p
+					|Contracting a company to perform hardware/software maintenance or implementation
+					| services brings a number of advantages in the face of hiring staff in your company:
+				ul
+					li
+						|The services will be provided by qualified and experienced
+						| personnel, no longer needing technical training of the internal staff
+					li
+						|The cost of contracting a maintenance company is much lower
+						| than in the case of hiring a specific person
+					li
+						|You can deduct a part of company taxes
 	.text-container-hidden-2(style="display:none")
+		.text-container
+			h1 Offering Solutions To All Requirements
+			br
+			.text-container.half-width
+				.img-container.img-container-100px-100px
+					img(src="/images/IT-Maintenance.png")
+				p
+					|It maintenance hardware and software consists of regular inspection of IT equipment in order
+					| to prevent their non-functioning situations, maintenance, repair of defects found,
+					| replacement of consumables and other similar operations.
+			.text-container.half-width
+				.img-container.img-container-100px-100px
+					img(src="/images/29_64x64.png")
+				p
+					|Through IT consulting we provide specialized informational support to companies. IT consulting
+					| contributes significantly to achieving a competitive advantage by identifying the most appropriate
+					| solutions to exploit the IT infrastructure and harnessing new technologies.
+			.text-container.half-width
+				.img-container.img-container-100px-100px
+					img(src="/images/32_64x64.png")
+				p
+					|The Site Hosting Service is aimed at all companies that want professional hosting services
+					| for their website, whether it is a simple presentation site, an online store or a web application.
+			.text-container.half-width
+				.img-container.img-container-100px-100px
+					img(src="/images/IT-Support-Service.png")
+				p
+					|We perform IT repairs including hardware and software services for a wide range
+					| of computer equipment, operating systems and software applications.
+			br
+			br
+			a(href="/ro/subscriptions/", title="Services Subscriptions") More information...
+			br
+	hr
+	.text-container
+		h1 Projects
 		.text-container.half-width
-			.img-container.img-container-100px-100px
-				img(src="/images/IT-Maintenance.png")
 			p
-				|It maintenance hardware and software consists of regular inspection of IT equipment in order
-				| to prevent their non-functioning situations, maintenance, repair of defects found,
-				| replacement of consumables and other similar operations.
+				|Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		.text-container.half-width
-			.img-container.img-container-100px-100px
-				img(src="/images/29_64x64.png")
 			p
-				|Through IT consulting we provide specialized informational support to companies. IT consulting
-				| contributes significantly to achieving a competitive advantage by identifying the most appropriate
-				| solutions to exploit the IT infrastructure and harnessing new technologies.
+				|Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		br
+		br
+		a(href="/ro/projects", title="Projects") Find out more...
+		br
+	hr
+	.text-container
+		h1 IT Outsourcing
 		.text-container.half-width
-			.img-container.img-container-100px-100px
-				img(src="/images/32_64x64.png")
 			p
-				|The Site Hosting Service is aimed at all companies that want professional hosting services
-				| for their website, whether it is a simple presentation site, an online store or a web application.
+				|Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		.text-container.half-width
-			.img-container.img-container-100px-100px
-				img(src="/images/IT-Support-Service.png")
 			p
-				|We perform IT repairs including hardware and software services for a wide range
-				| of computer equipment, operating systems and software applications.
+				|Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		br
+		br
+		a(href="/ro/outsourcing", title="IT Outsourcing") Find out more...
+		br
 block contentTopRO
 	.text-container-title
 		.img-container-logo.float-left-always
@@ -102,101 +138,103 @@ block contentTopRO
 		h2 Provider de Servicii IT Pentru Comunitatile in Dezvoltare
 block contentRO
 	hr
-	.text-container(style="text-align: center").full-width.slideshow-container
-			.mySlides1(style="display: block")
-				.numbertext 1 / 3
-				img(src="/images/ComputerHardwareCloseUp.jpeg" style="width:100%")
-				.text Computer Hardware
-			.mySlides1(style="display: none")
-				.numbertext 2 / 3
-				img(src="/images/Circuit-Traces.jpg" style="width:100%")
-				.text Circuit Traces
-			.mySlides1(style="display: none")
-				.numbertext 3 / 3
-				img(src="/images/EarthOverviewNight.jpeg" style="width:100%")
-				.text The Earth At Night
-			br
-			a(class="prev" onclick="plusSlides(-1, 0)") &#10094;
-			a(class="next" onclick="plusSlides(1, 0)") &#10095;
+	.text-container(style="text-align: center").slideshow-container
+		.mySlides1(style="display: block")
+			.numbertext 1 / 3
+			img(src="/images/ComputerHardwareCloseUp.jpeg" style="width:100%")
+			.text Computer Hardware
+		.mySlides1(style="display: none")
+			.numbertext 2 / 3
+			img(src="/images/Circuit-Traces.jpg" style="width:100%")
+			.text Circuit Traces
+		.mySlides1(style="display: none")
+			.numbertext 3 / 3
+			img(src="/images/EarthOverviewNight.jpeg" style="width:100%")
+			.text The Earth At Night
+		br
+		a(class="prev" onclick="plusSlides(-1, 0)") &#10094;
+		a(class="next" onclick="plusSlides(1, 0)") &#10095;
 	hr
 	label(for="toggle-text-container-view-1" class="toggle-text-container" style="background-color: rgba(39, 174, 96,0.7)") Despre Noi
 	input(type="checkbox" id="toggle-text-container-view-1" role="button" onclick="myFunction()")
 	label(for="toggle-text-container-view-2" class="toggle-text-container") Serviciile Oferite
 	input(type="checkbox" id="toggle-text-container-view-2" role="button" onclick="myFunction()")
 	.text-container-hidden-1(style="display:inline-table")
-		h1 Implicare si Devotament
-		br
-		.text-container.full-width
-			h3 Mentenanta IT, Service calculatoare
-			p
-				|Firma noastra ofera o gama completa de servicii IT, adresandu-se atat firmelor mici si mijlocii cat
-				| si persoanelor fizice. Suntem o echipa ce insumeaza peste 3 ani de experienta in ceea ce priveste
-				| intretinerea echipamentelor de calcul, efectuarea de service calculatoare (atat hardware cat si software),
-				| implementarea de retele (atat cu fir cat si wireless – proiectare, cablare, instalare, configurare, administrare),
-				| oferirea serviciilor asistenta tehnica si mentenanta cat si a serviciilor de consultanta.
-				br
-				br
-				a(href="/ro/maintenance", title="Servicii Mentenanta") Mai multe informatii...
-				br
-		.text-container.full-width
-			h3 Oferta Service pentru Firme/Persoane Juridice
-			p
-				|In functie de nevoile fiecarei firme, putem oferi abonamente flexibile de mentenanta a echipamentelor
-				| de calcul, dar putem actiona si sub forma de interventie (in cazul firmelor cu care nu avem contract).
-				| Abonamentele oferite includ un numar fix de interventii (atat software cat si hardware), intretinerea
-				| si implementarea (la cerere) a retelelor de calculatoare, consultanta in ceea ce priveste achizitionarea
-				| si configurarea echipamentelor IT si serviciilor folosite (internet, intranet, mail, file sharing).
-				br
-				br
-				a(href="/ro/subscriptions", title="Abonamente") Mai multe informatii...
-				br
-		.text-container.full-width
-			h3 Avantaje
-			p
-				|Contractarea unei firme pentru indeplinirea de servicii de mentenanta hardware/software sau implementare,
-				| aduce o serie de avantaje in fata angajarii de personal in cadrul companiei dumneavoastre:
-			ul
-				li
-					|Serviciile vor fi oferite de personal calificat si experimentat,
-					| nemaifiind nevoie de instruirea tehnica a personalului
-				li
-					|Costul de a contracta o firma de mentenanta este mult mai mic
-					| decat in cazul angajarii unei persoane specilizate
-				li
-					|Aveti posibilitatea de a deduce o parte din impozite
+		.text-container
+			h1 Implicare si Devotament
+			br
+			.text-container
+				h3 Mentenanta IT, Service calculatoare
+				p
+					|Firma noastra ofera o gama completa de servicii IT, adresandu-se atat firmelor mici si mijlocii cat
+					| si persoanelor fizice. Suntem o echipa ce insumeaza peste 3 ani de experienta in ceea ce priveste
+					| intretinerea echipamentelor de calcul, efectuarea de service calculatoare (atat hardware cat si software),
+					| implementarea de retele (atat cu fir cat si wireless – proiectare, cablare, instalare, configurare, administrare),
+					| oferirea serviciilor asistenta tehnica si mentenanta cat si a serviciilor de consultanta.
+					br
+					br
+					a(href="/ro/maintenance", title="Servicii Mentenanta") Mai multe informatii...
+					br
+			.text-container
+				h3 Oferta Service pentru Firme/Persoane Juridice
+				p
+					|In functie de nevoile fiecarei firme, putem oferi abonamente flexibile de mentenanta a echipamentelor
+					| de calcul, dar putem actiona si sub forma de interventie (in cazul firmelor cu care nu avem contract).
+					| Abonamentele oferite includ un numar fix de interventii (atat software cat si hardware), intretinerea
+					| si implementarea (la cerere) a retelelor de calculatoare, consultanta in ceea ce priveste achizitionarea
+					| si configurarea echipamentelor IT si serviciilor folosite (internet, intranet, mail, file sharing).
+					br
+					br
+					a(href="/ro/subscriptions", title="Abonamente") Mai multe informatii...
+					br
+			.text-container
+				h3 Avantaje
+				p
+					|Contractarea unei firme pentru indeplinirea de servicii de mentenanta hardware/software sau implementare,
+					| aduce o serie de avantaje in fata angajarii de personal in cadrul companiei dumneavoastre:
+				ul
+					li
+						|Serviciile vor fi oferite de personal calificat si experimentat,
+						| nemaifiind nevoie de instruirea tehnica a personalului
+					li
+						|Costul de a contracta o firma de mentenanta este mult mai mic
+						| decat in cazul angajarii unei persoane specilizate
+					li
+						|Aveti posibilitatea de a deduce o parte din impozite
 	.text-container-hidden-2(style="display:none")
-		h1 Oferim Solutii Tuturor Cerintelor Primite
-		br
-		.text-container.half-width
-			.img-container.img-container-100px-100px
-				img(src="/images/IT-Support-Service.png")
-			p
-				|Mentenanta IT hardware si software consta in inspectarea regulata a echipamentelor it
-				| in scopul prevenirii situatiilor de nefunctionare a acestora, intretinerii, remedierii
-				| defectelor constatate, inlocuirii consumabilelor si alte operatiuni similare.
-		.text-container.half-width
-			.img-container.img-container-100px-100px
-				img(src="/images/29_64x64.png")
-			p
-				|Prin consultanta IT oferim suport informational de specialitate companiilor.
-				| Consultanta IT contribuie semnificativ la obtinerea unui avantaj competitiv prin identificarea
-				| celor mai adecvate solutii de exploatare a infrastructurii IT si valorificarea noilor tehnologii.
-		.text-container.half-width
-			.img-container.img-container-100px-100px
-				img(src="/images/32_64x64.png")
-			p
-				|Serviciul Gazduire Site se adreseaza tuturor companiilor care isi doresc servicii profesionale
-				| de gazduire pentru site-ul lor, fie ca acesta este un simplu site de prezentare, un magazin online sau o aplicatie web.
-		.text-container.half-width
-			.img-container.img-container-100px-100px
-				img(src="/images/IT-Support-Service.png")
-			p
-				|Efectuam reparatii it incluzand servicii hardware si software pentru o gama
-				| variata de echipamente informatice, sisteme de operare si aplicatii software.
-		br
-		br
-		a(href="/ro/subscriptions/", title="Abonamente Servicii") Mai multe informatii...
-		br
+		.text-container
+			h1 Oferim Solutii Tuturor Cerintelor Primite
+			br
+			.text-container.half-width
+				.img-container.img-container-100px-100px
+					img(src="/images/IT-Support-Service.png")
+				p
+					|Mentenanta IT hardware si software consta in inspectarea regulata a echipamentelor it
+					| in scopul prevenirii situatiilor de nefunctionare a acestora, intretinerii, remedierii
+					| defectelor constatate, inlocuirii consumabilelor si alte operatiuni similare.
+			.text-container.half-width
+				.img-container.img-container-100px-100px
+					img(src="/images/29_64x64.png")
+				p
+					|Prin consultanta IT oferim suport informational de specialitate companiilor.
+					| Consultanta IT contribuie semnificativ la obtinerea unui avantaj competitiv prin identificarea
+					| celor mai adecvate solutii de exploatare a infrastructurii IT si valorificarea noilor tehnologii.
+			.text-container.half-width
+				.img-container.img-container-100px-100px
+					img(src="/images/32_64x64.png")
+				p
+					|Serviciul Gazduire Site se adreseaza tuturor companiilor care isi doresc servicii profesionale
+					| de gazduire pentru site-ul lor, fie ca acesta este un simplu site de prezentare, un magazin online sau o aplicatie web.
+			.text-container.half-width
+				.img-container.img-container-100px-100px
+					img(src="/images/IT-Support-Service.png")
+				p
+					|Efectuam reparatii it incluzand servicii hardware si software pentru o gama
+					| variata de echipamente informatice, sisteme de operare si aplicatii software.
+			br
+			br
+			a(href="/ro/subscriptions/", title="Abonamente Servicii") Mai multe informatii...
+			br
 	hr
 	.text-container
 		h1 Proiecte
