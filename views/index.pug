@@ -2,7 +2,8 @@ extends layout.pug
 
 block contentTop
 	.text-container-title
-		img(src="/images/title/templatemo_logo.fw.png")
+		.img-container-logo.float-left-always
+			img(src="/images/title/goodsys-logo.png")
 		h2 IT Services Provider for Deveolping Communities
 block content
 	hr
@@ -19,6 +20,7 @@ block content
 				.numbertext 3 / 3
 				img(src="/images/EarthOverviewNight.jpeg" style="width:100%")
 				.text The Earth At Night
+			br
 			a(class="prev" onclick="plusSlides(-1, 0)") &#10094;
 			a(class="next" onclick="plusSlides(1, 0)") &#10095;
 	hr
@@ -27,8 +29,7 @@ block content
 	label(for="toggle-text-container-view-2" class="toggle-text-container") Offered Services
 	input(type="checkbox" id="toggle-text-container-view-2" role="button" onclick="myFunction()")
 	.text-container-hidden-1(style="display:inline-table")
-		br
-		.text-container.third-width
+		.text-container.full-width
 			h3 IT Maintenance, Computer Service
 			p
 				|Our company offers a full range of IT services, addressing both small and medium-sized companies
@@ -39,7 +40,8 @@ block content
 				br
 				br
 				a(href="/en/maintenance") Find out more...
-		.text-container.third-width
+				br
+		.text-container.full-width
 			h3 Service Offer for Companies/Legal Persons
 			p
 				|Depending on the needs of each company, we can offer flexible maintenance subscriptions
@@ -49,8 +51,10 @@ block content
 				| (on request) of computer networks, consulting regarding the purchase and configuration
 				| of IT equipment and services used (internet, intranet, mail, file sharing).
 				br
+				br
 				a(href="/en/subscriptions") Find out more...
-		.text-container.third-width
+				br
+		.text-container.full-width
 			h3 Advantages
 			p
 				|Contracting a company to perform hardware/software maintenance or implementation
@@ -64,7 +68,6 @@ block content
 					| than in the case of hiring a specific person
 				li
 					|You can deduct a part of company taxes
-			br
 	.text-container-hidden-2(style="display:none")
 		.text-container.half-width
 			.img-container.img-container-100px-100px
@@ -92,7 +95,6 @@ block content
 			p
 				|We perform IT repairs including hardware and software services for a wide range
 				| of computer equipment, operating systems and software applications.
-				br
 block contentTopRO
 	.text-container-title
 		.img-container-logo.float-left-always
@@ -113,6 +115,7 @@ block contentRO
 				.numbertext 3 / 3
 				img(src="/images/EarthOverviewNight.jpeg" style="width:100%")
 				.text The Earth At Night
+			br
 			a(class="prev" onclick="plusSlides(-1, 0)") &#10094;
 			a(class="next" onclick="plusSlides(1, 0)") &#10095;
 	hr
@@ -123,7 +126,7 @@ block contentRO
 	.text-container-hidden-1(style="display:inline-table")
 		h1 Implicare si Devotament
 		br
-		.text-container.third-width
+		.text-container.full-width
 			h3 Mentenanta IT, Service calculatoare
 			p
 				|Firma noastra ofera o gama completa de servicii IT, adresandu-se atat firmelor mici si mijlocii cat
@@ -133,9 +136,9 @@ block contentRO
 				| oferirea serviciilor asistenta tehnica si mentenanta cat si a serviciilor de consultanta.
 				br
 				br
-				a(href="/ro/maintenance") Mai multe informatii...
+				a(href="/ro/maintenance", title="Servicii Mentenanta") Mai multe informatii...
 				br
-		.text-container.third-width
+		.text-container.full-width
 			h3 Oferta Service pentru Firme/Persoane Juridice
 			p
 				|In functie de nevoile fiecarei firme, putem oferi abonamente flexibile de mentenanta a echipamentelor
@@ -145,9 +148,9 @@ block contentRO
 				| si configurarea echipamentelor IT si serviciilor folosite (internet, intranet, mail, file sharing).
 				br
 				br
-				a(href="/ro/subscriptions") Mai multe informatii...
+				a(href="/ro/subscriptions", title="Abonamente") Mai multe informatii...
 				br
-		.text-container.third-width
+		.text-container.full-width
 			h3 Avantaje
 			p
 				|Contractarea unei firme pentru indeplinirea de servicii de mentenanta hardware/software sau implementare,
@@ -161,8 +164,9 @@ block contentRO
 					| decat in cazul angajarii unei persoane specilizate
 				li
 					|Aveti posibilitatea de a deduce o parte din impozite
-			br
 	.text-container-hidden-2(style="display:none")
+		h1 Oferim Solutii Tuturor Cerintelor Primite
+		br
 		.text-container.half-width
 			.img-container.img-container-100px-100px
 				img(src="/images/IT-Support-Service.png")
@@ -189,8 +193,10 @@ block contentRO
 			p
 				|Efectuam reparatii it incluzand servicii hardware si software pentru o gama
 				| variata de echipamente informatice, sisteme de operare si aplicatii software.
-				br
-				br
+		br
+		br
+		a(href="/ro/subscriptions/", title="Abonamente Servicii") Mai multe informatii...
+		br
 	hr
 	.text-container
 		h1 Proiecte
@@ -202,5 +208,18 @@ block contentRO
 				|Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		br
 		br
-		a(href="/ro/projects") Afla mai multe...
+		a(href="/ro/projects", title="Proiecte") Afla mai multe...
+		br
+	hr
+	.text-container
+		h1 Externalizare IT
+		.text-container.half-width
+			p
+				|Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		.text-container.half-width
+			p
+				|Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		br
+		br
+		a(href="/ro/outsourcing", title="Externalizare IT") Afla mai multe...
 		br

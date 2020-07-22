@@ -484,6 +484,10 @@ p {
 ul {
   margin-left: 5px;
 
+  font-size: larger;
+  text-align: center;
+  color: rgba(39, 174, 96, 0.7);
+
   padding: 20px 20px;
 }
 
@@ -508,6 +512,12 @@ h3, h4 {
 hr {
   border: 2px solid rgba(60, 140, 230, 0.7);
 }
+/* <-- */
+
+/* -->Icons */
+.shape187{display:inline-block!important;position:relative;width:30px;height:30px;background:rgba(0,0,0,0);border:calc(30px/8) solid #666666;border-radius:100%;box-sizing:content-box}
+
+.shape187:before{position:absolute;content:'';margin:auto;top:0;bottom:0;left:0;right:0;width:calc(30px/3);height:calc(30px/3);background:rgba(0,0,0,0);border:calc(30px/8) solid #666666;border-right:calc(30px/8) solid transparent;border-radius:100%;box-sizing:content-box}
 /* <-- */
 
 /* Small-Screen-Width Rules */
