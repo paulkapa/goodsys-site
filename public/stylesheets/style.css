@@ -7,7 +7,7 @@ header {
   margin: auto;
 
   width: 100%;
-  height: 150px;
+  height: 120px;
 
   font-family: inherit;
   font-size: inherit;
@@ -51,7 +51,7 @@ nav a, nav .hide a {
 
   color: white;
 
-  padding: 5px 5px;
+  padding: 10px 10px;
   cursor: pointer;
 
   background-color: rgb(0,0,0);
@@ -89,6 +89,9 @@ nav a:hover+.hide, nav a+.hide:hover {
 .language-select {
   display: inline-table;
   margin: auto;
+
+  padding-top: 10px;
+  padding-right: 10px;
 
   position: relative;
   float: right;
@@ -140,6 +143,10 @@ header input#language-select[type="checkbox"]:checked+.hide {
     display: none;
   }
 
+  header {
+    height: 150px;
+  }
+
   header input#show-menu[type="checkbox"]:checked~nav {
     display: block;
     margin: auto;
@@ -151,7 +158,8 @@ header input#language-select[type="checkbox"]:checked+.hide {
     display: inline-table;
     margin: auto;
 
-    padding-left: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
 
     position: relative;
   }
@@ -222,20 +230,20 @@ footer li a:hover {
 /* -->Page-Wide Parent Styles */
 body, html {
   display: inline-table;
-  background-image: url("../images/title-bg.jpg");
+  /*background-image: url("../images/title-bg.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
   margin: auto;
 
   width: 100%;
   height: 100%;
 
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  color: rgba(255, 255, 255);
+  color: white;
 
-  padding: 50px 20px;
+  background-color: rgba(60, 140, 230, 0.5);
 
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -249,12 +257,14 @@ body, html {
 /* Content Container */
 .bg-text-full {
   display: inline-table;
-  border: 3px solid black;
-  border-spacing: 2px 10px;
+  /*border: 3px solid black;*/
+  /*border-spacing: 2px 10px;*/
   margin: auto;
 
   width: 100%;
   height: fit-content;
+
+  text-align: center;
   
   background-color: transparent; /* Fallback color */
   background-color: rgba(0,0,0, 0.3);
@@ -268,9 +278,13 @@ body, html {
   display: inline-table;
   border: 1px solid rgba(60, 140, 230, 0.7);
   border-spacing: 5px 7px;
-  margin: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   
   line-height: 25px;
+  padding: 10px 10px;
   /*
   background-image: url("../images/title-bg.jpg");
   background-attachment: fixed;
@@ -283,7 +297,7 @@ body, html {
 }
 
 .text-container:hover {
-  background-color: rgba(0,0,0, 0.4);
+  background-color: rgba(0,0,0, 0.2);
 }
 
 .text-container-title {
@@ -332,6 +346,18 @@ body, html {
   position: relative;
 }
 
+.img-container-logo {
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  padding-top: 5px;
+  background-color: rgba(255,255,255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  image-rendering: optimizeQuality;
+}
+
 .img-container-100px-100px img {
   width: 100px;
   height: 100px;
@@ -370,7 +396,7 @@ body, html {
   position: relative;
   top: 50%;
   width: auto;
-  padding: 16px;
+  padding: 5px;
   margin-top: -22px;
   color: white;
   font-weight: bold;
@@ -415,6 +441,10 @@ body, html {
 
 .full-width {
   width: 100%;
+}
+
+.width-fit-content {
+  width: fit-content;
 }
 /* <- */
 
@@ -463,29 +493,40 @@ a {
 }
 
 p {
-  padding: 30px 30px;
+  text-align: center;
 }
 
 ul {
+  list-style-type: none;
   margin-left: 5px;
+
+  font-size: larger;
+  text-align: center;
+  color: rgba(39, 174, 96, 0.7);
 
   padding: 20px 20px;
 }
 
 h1 {
-  padding: 10px 10px;
+  padding: 10px 50px;
 
   text-align: left;
 }
 
 h2 {
-  padding: 10px 10px;
+  padding: 10px 50px;
 
   text-align: right;
 }
 
-h3, h4 {
-  padding: 5px 5px;
+h3 {
+  padding: 5px 50px;
+
+  text-align: left;
+}
+
+h4 {
+  padding: 5px 10px;
 
   text-align: center;
 }
@@ -495,10 +536,13 @@ hr {
 }
 /* <-- */
 
-/* Small-Screen-Width Rules */
+/* -->Icons */
+/* <-- */
+
+/* Screen-Width Rules */
 @media screen and (max-width: 800px) {
   p {
-    padding: 10px 10px;
+    padding: 0px 5px;
   }
 
   ul {
@@ -510,11 +554,15 @@ hr {
   }
 
   .third-width {
-    width: 100%;
+    width: unset;
   }
 
   .half-width {
-    width: 100%;
+    width: unset;
+  }
+
+  .width-fit-content {
+    width: unset;
   }
   
   .float-left {
@@ -523,6 +571,12 @@ hr {
 
   .float-right {
     float: none;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .text-container {
+    border: none;
   }
 }
 /*--> <--*/
