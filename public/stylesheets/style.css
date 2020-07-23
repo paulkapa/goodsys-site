@@ -428,8 +428,8 @@ body, html {
 
 /* ->Slideshow */
 .mySlides1 img, .mySlides2 img {
-  max-width: 1000px;
-  max-height: 500px;
+  max-width: 1200px;
+  max-height: 700px;
   min-height: 450px;
   vertical-align: middle;
 }
