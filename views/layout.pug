@@ -9,14 +9,14 @@ html
 		link(rel='stylesheet' type="text/css" href='/stylesheets/style.css')
 		script(type="text/javascript" src='/javascripts/script.js')
 	body
-		.bg-text-full
+		.bg-text-full.content-container-header
 			if lang == 'EN'
 				include header.pug
 			else if lang == 'RO'
 				include headerRo.pug
 			else
 				include headerRO.pug
-		.bg-text-full
+		.bg-text-full.content-container-body
 			if lang == 'EN'
 				block contentTop
 				block content
