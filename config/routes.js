@@ -3,8 +3,9 @@ var contactRouter = require('../routes/contact');
 var copyrightRouter = require('../routes/copyright');
 var maintenanceRouter = require('../routes/maintenance');
 var subscriptionsRouter = require('../routes/subscriptions');
-var serviceRouter = require('../routes/service')
-var outsourcingRouter = require('../routes/outsourcing')
+var serviceRouter = require('../routes/service');
+var outsourcingRouter = require('../routes/outsourcing');
+var projectsRouter = require('../routes/projects');
 
 module.exports = (app) => {
     app.use('/', indexRouter);
@@ -14,5 +15,6 @@ module.exports = (app) => {
     app.use('/', subscriptionsRouter);
     app.use('/', serviceRouter);
     app.use('/', outsourcingRouter);
+    app.use('/', projectsRouter);
     // !-- Do not remove this line --! //
 };

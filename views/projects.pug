@@ -1,0 +1,50 @@
+extends layout.pug
+
+block contentTop
+	.text-container-title(style = "height: 700px; background-image: url('/images/bg-itprojectmanagement.jpg');background-position: top;background-repeat: no-repeat;background-size: cover;")
+		h1(style = "width:300px; backdrop-filter: brightness(35%)") Projects
+		if project == "project1"
+			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") 1
+		else if project == "project2"
+			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") 2
+		else if project == "project3"
+			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") 3
+		else if project == "project4"
+			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") 4
+		else
+			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") Details
+block content
+	if project == "project1"
+		h2 Not Found
+	else if project == "project2"
+		h2 Not Found
+	else if project == "project3"
+		h2 Not Found
+	else if project == "project4"
+		h2 Not Found
+	else
+		h2 Content
+block contentTopRO
+	.text-container-title(style = "height: 700px; background-image: url('/images/bg-itprojectmanagement.jpg');background-position: top;background-repeat: no-repeat;background-size: cover;")
+		h1(style = "width:300px; backdrop-filter: brightness(35%)") Proiecte
+		if project == "project1"
+			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") 1
+		else if project == "project2"
+			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") 2
+		else if project == "project3"
+			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") 3
+		else if project == "project4"
+			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") 4
+		else
+			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") Informatii
+block contentRO
+	if project == "project1"
+		h2 Not Found
+	else if project == "project2"
+		h2 Not Found
+	else if project == "project3"
+		h2 Not Found
+	else if project == "project4"
+		h2 Not Found
+	else
+		h2 Continut
