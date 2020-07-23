@@ -11,7 +11,7 @@ html
 	body
 		block bgVideo
 			video#myVideo(autoplay muted loop)
-				source( type='video/mp4' src='/videos/Organic_Lines_4K_Motion_Background_Loop.mp4')
+				source(type='video/mp4' src='/images/Organic_Lines_4K_Motion_Background_Loop.mp4')
 			script.
 				var vid = document.getElementById("myVideo");
 				var alerted = localStorage.getItem("alerted") || "";
@@ -19,7 +19,8 @@ html
 					vid.oncanplaythrough = function() {
 					alert("Can play through video without stopping");
 					localStorage.setItem("alerted","yes");
-				};
+					};
+				}
 		.bg-text-full.content-container-header
 			if lang == 'EN'
 				include header.pug
