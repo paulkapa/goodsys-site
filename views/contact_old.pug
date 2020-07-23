@@ -1,0 +1,81 @@
+
+      h1
+        a(href='http://www.goodsys.ro' target='_parent') GoodSys
+    #templatemo_menu.ddsmoothmenu
+      ul
+        li
+          a(href='index.html') Home
+        li
+          a(href='mentenanta.html') Mentenanta
+          ul
+            li
+              a(href='service.html') Service
+            li
+              a(href='#') Recuperare Date
+            li
+              a(href='#') Abonamente
+        li
+          a(href='abonament.html') Abonamente
+          ul
+            li
+              a(href='abonament_avantaj.html') IT Avantaj
+            li
+              a(href='abonament_buisines_flex.html') IT Flexibil
+            li
+              a(href='abonament_buisines_nelimitat.html') IT Nelimitat
+            li
+              a(href='abonament_premium.html') IT Premium
+        li
+          a(href='externalizare.html') Externalizare
+        li
+          a.selected(href='#') Contact
+      br(style='clear: left')
+    // end of templatemo_menu
+  // end of header
+  #templatemo_main
+    h2 Contactatine
+    .col_w630.float_l
+      #contact_form
+        h4 Puteti sa timiteti un mesaj:
+        form(method='post' name='contact' action='#')
+          input(type='hidden' name='post' value='Send')
+          label(for='author') Nume:
+          input#author.input_field(type='text' name='author')
+          .cleaner.h10
+          label(for='email') Email:
+          input#email.validate-email.input_field(type='text' name='email')
+          .cleaner.h10
+          label(for='text') Mesaj:
+          textarea#text(name='text' rows='0' cols='0')
+          .cleaner.h10
+          input#submit.submit_btn.float_l(type='submit' name='submit' value='Send')
+          input#reset.submit_btn.float_r(type='reset' name='reset' value='Reset')
+    .col_w300.float_r
+      .col_fw
+        h4 Adresa Contact
+        h6  SC Goodsys SRL
+        |                 Str. 9 Mai, 
+        |                 Bl. D2, parter
+        br
+        br
+        |                 Tel: 0766.777.806
+        br
+        |                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0730.309.696
+        br
+      .col_fw_last
+        h4 Locatiea
+        #map
+          a.pirobox(href='images/map_thumb.jpg')
+            img(src='images/map_thumb.jpg' alt='Image' height='250' ,='' width='360')
+    .cleaner
+  .col_fw_last
+    h2 &nbsp;
+    .cleaner.h20
+    .cleaner
+  .cleaner
+.cleaner
+#templatemo_footer_wrapper
+  #templatemo_footer
+    | Copyright &copy; 2012 
+    a(href='#') goodsys
+    .cleaner

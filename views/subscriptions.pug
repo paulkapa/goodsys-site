@@ -1,18 +1,18 @@
-extends layout
+extends layout.pug
 
 block contentTop
-	.text-container-title
-		h1 Subscriptions
+	.text-container-title(style = "height: 700px; background-image: url('/images/bussiness-plans.jpg');background-position: top;background-repeat: no-repeat;background-size: cover;")
+		h1(style = "width:300px; backdrop-filter: brightness(35%)") Subscriptions
 		if subscription == "advantage"
-			h2 Not Found
+			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") IT Advantage
 		else if subscription == "flexible"
-			h2 Not Found
+			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") IT Flexible
 		else if subscription == "unlimited"
-			h2 Not Found
+			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") IT Bussiness Unlimited
 		else if subscription == "premium"
-			h2 IT Premium
+			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") IT Bussiness Premium
 		else
-			h2 Details
+			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") Informatii
 block content
 	if subscription == "advantage"
 		h2 Not Found
@@ -25,18 +25,18 @@ block content
 	else
 		h2 Content
 block contentTopRO
-	.text-container-title
-		h1 Abonamente
+	.text-container-title(style = "height: 700px; background-image: url('/images/bussiness-plans.jpg');background-position: top;background-repeat: no-repeat;background-size: cover;")
+		h1(style = "width:300px; backdrop-filter: brightness(35%)") Abonamente
 		if subscription == "advantage"
-			h2 Not Found
+			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") IT Avantaj
 		else if subscription == "flexible"
-			h2 Not Found
+			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") IT Flexibil
 		else if subscription == "unlimited"
-			h2 Not Found
+			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") IT Bussiness Nelimitat
 		else if subscription == "premium"
-			h2 IT Premium
+			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") IT Bussiness Premium
 		else
-			h2 Detalii
+			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") Detalii
 block contentRO
 	if subscription == "advantage"
 		h2 Not Found
