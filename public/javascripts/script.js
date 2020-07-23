@@ -37,8 +37,11 @@ function myFunction() {
     
   }
 
-var slideIndex = [1,1];
-var slideId = ["mySlides1", "mySlides2"]
+/**
+ * Slideshow
+ */
+var slideIndex = [1,1,1];
+var slideId = ["mySlides", "mySlides1", "mySlides2"]
 
 // Next/previous controls
 function plusSlides(n, no) {
@@ -61,6 +64,29 @@ function showSlides(n, no) {
   x[slideIndex[no]-1].style.display = "block";
 }
 
-//showSlides(1, 1);
-//showSlides(slideIndex);
 showSlides(1, 0);
+// End Slideshow
+
+/**
+ * Video Background
+ */
+// Pause and play the video, and change the button text
+function videoPlayBg(lang) {
+// Get the video
+var video = document.getElementById("myVideo");
+// Get the button
+var btn = document.getElementById("myBtn");
+// Play/Pause Video
+  if (video.paused) {
+    video.play();
+    if (lang == "EN") {btn.innerHTML = "PAUSE Background Video";}
+    else if (lang == "RO") {btn.innerHTML = "PAUSE Videoclip de Fundal";}
+    else {btn.innerHTML = "PAUSE Background Video";}
+  } else {
+    video.pause();
+    if (lang == "EN") {btn.innerHTML = "PLAY Background Video";}
+    else if (lang == "RO") {btn.innerHTML = "PLAY Videoclip de Fundal";}
+    else {btn.innerHTML = "PLAY Background Video";}
+  }
+}
+// End Video Bg
