@@ -2,17 +2,17 @@ extends layout.pug
 
 block contentTop
 	.text-container-title(style = "height: 700px; background-image: url('/images/bussiness-plans.jpg');background-position: top;background-repeat: no-repeat;background-size: cover;")
-		h1(style = "width:300px; backdrop-filter: brightness(35%)") Subscriptions
+		h1(style = "width:300px; background-color: black") Subscriptions
 		if subscription == "advantage"
-			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") IT Advantage
+			h2(style = "width:300px; float: right; background-color: grey") IT Advantage
 		else if subscription == "flexible"
-			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") IT Flexible
+			h2(style = "width:300px; float: right; background-color: grey") IT Flexible
 		else if subscription == "unlimited"
-			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") IT Bussiness Unlimited
+			h2(style = "width:300px; float: right; background-color: grey") IT Bussiness Unlimited
 		else if subscription == "premium"
-			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") IT Bussiness Premium
+			h2(style = "width:300px; float: right; background-color: grey") IT Bussiness Premium
 		else
-			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") Informatii
+			h2(style = "width:300px; float: right; background-color: grey") Informatii
 block content
 	if subscription == "advantage"
 		h2 Not Found
@@ -26,17 +26,17 @@ block content
 		h2 Content
 block contentTopRO
 	.text-container-title(style = "height: 700px; background-image: url('/images/bussiness-plans.jpg');background-position: top;background-repeat: no-repeat;background-size: cover;")
-		h1(style = "width:300px; backdrop-filter: brightness(35%)") Abonamente
+		h1(style = "width:300px; background-color: black") Abonamente
 		if subscription == "advantage"
-			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") IT Avantaj
+			h2(style = "width:300px; float: right; background-color: grey") IT Avantaj
 		else if subscription == "flexible"
-			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") IT Flexibil
+			h2(style = "width:300px; float: right; background-color: grey") IT Flexibil
 		else if subscription == "unlimited"
-			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") IT Bussiness Nelimitat
+			h2(style = "width:300px; float: right; background-color: grey") IT Bussiness Nelimitat
 		else if subscription == "premium"
-			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") IT Bussiness Premium
+			h2(style = "width:300px; float: right; background-color: grey") IT Bussiness Premium
 		else
-			h2(style = "width:300px; float: right; backdrop-filter: brightness(35%)") Detalii
+			h2(style = "width:300px; float: right; background-color: grey") Detalii
 block contentRO
 	if subscription == "advantage"
 		h2 Not Found
