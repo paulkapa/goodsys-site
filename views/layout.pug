@@ -11,17 +11,8 @@ html
 	body
 		block bgVideo
 			video#myVideo(autoplay muted loop)
+				source(type='video/mp4' src='/videos/Organic_Lines_4K_Motion_Background_Loop.mp4')
 				source(type='video/webm' src='/videos/Organic_Lines_4K_Motion_Background_Loop.webm')
-				source(type='video/ogg' src='/videos/Organic_Lines_4K_Motion_Background_Loop.webm')
-			script.
-				var vid = document.getElementById("myVideo");
-				var alerted = localStorage.getItem("alerted") || "";
-				if (alerted != "yes") {
-					vid.oncanplaythrough = function() {
-					alert("Can play through video without stopping");
-					localStorage.setItem("alerted","yes");
-					};
-				}
 		.bg-text-full.content-container-header
 			if lang == 'EN'
 				include header.pug
